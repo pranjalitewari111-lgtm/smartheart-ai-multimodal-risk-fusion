@@ -10,5 +10,7 @@ Key capabilities include:
 4) API-based inference pipeline
 5) Reproducible training workflow
 6) Scalable deployment architecture
-
 This project demonstrates applied AI in healthcare analytics, emphasizing ethical data handling, interpretability, and preventive decision support.
+SmartHeart AI proposes a multimodal cardiovascular risk assessment framework that synthesizes structured clinical indicators and lifestyle-driven attributes into a unified predictive architecture. By leveraging ensemble machine learning and feature-level fusion strategies, the system captures nonlinear dependencies between physiological and behavioral health signals.
+
+The framework is designed for early-stage disease risk stratification, supporting preventive analytics rather than diagnostic replacement. The implementation prioritizes interpretability, reproducibility, and ethical AI deployment within healthcare contexts.
