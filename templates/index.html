@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SmartHeart AI</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background:#f4f6f9;
+            text-align:center;
+            padding:40px;
+        }
+
+        .container{
+            background:white;
+            width:50%;
+            margin:auto;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        input{
+            width:80%;
+            padding:10px;
+            margin:8px;
+            border-radius:8px;
+            border:1px solid gray;
+        }
+
+        button{
+            background:#007bff;
+            color:white;
+            padding:12px 20px;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            margin-top:15px;
+        }
+
+        button:hover{
+            background:#0056b3;
+        }
+
+        h1{
+            color:#d62828;
+        }
+
+        .result{
+            margin-top:20px;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>SmartHeart AI</h1>
+
+        <form action="/predict" method="post">
+
+            <input type="text" name="age" placeholder="Age" required><br>
+
+            <input type="text" name="sex" placeholder="Sex (1=Male, 0=Female)" required><br>
+
+            <input type="text" name="cp" placeholder="Chest Pain Type (0-3)" required><br>
+
+            <input type="text" name="trestbps" placeholder="Resting Blood Pressure" required><br>
+
+            <input type="text" name="chol" placeholder="Cholesterol" required><br>
+
+            <input type="text" name="fbs" placeholder="Fasting Blood Sugar" required><br>
+
+            <input type="text" name="restecg" placeholder="Rest ECG" required><br>
+
+            <input type="text" name="thalach" placeholder="Max Heart Rate" required><br>
+
+            <input type="text" name="exang" placeholder="Exercise Angina" required><br>
+
+            <input type="text" name="oldpeak" placeholder="Oldpeak" required><br>
+
+            <input type="text" name="slope" placeholder="Slope" required><br>
+
+            <input type="text" name="ca" placeholder="CA" required><br>
+
+            <input type="text" name="thal" placeholder="Thal" required><br>
+
+            <button type="submit">Predict</button>
+
+        </form>
+
+        <div class="result">
+
+            {{ prediction_text }}
+
+            <br><br>
+
+            {{ risk }}
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
